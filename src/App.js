@@ -25,8 +25,8 @@ function App(props) {
       <div>
         <button onClick={() => dispatch(fetchData())}>Thunk!</button>
         <button onClick={() => dispatch(clearData())}>Clear</button>
-        <button onClick={() => dispatch(incrementId())}>Next</button>
         <button onClick={() => dispatch(decrementId())}>Back</button>
+        <button onClick={() => dispatch(incrementId())}>Next</button>
       </div>
       <input value={ data.objectId } onChange={(e) => {
         dispatch(inputId(Number(e.target.value)))
