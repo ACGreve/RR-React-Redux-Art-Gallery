@@ -9,7 +9,7 @@ function App(props) {
 
   const renderImg = () => {
     if(data.apiData) {
-      return <img style={{'width': '100vw'}} src={data.apiData.primaryImage} alt={data.apiData.title} />
+      return <img style={{'width': '50vw'}} src={data.apiData.primaryImage} alt={data.apiData.title} />
     } else {
       return <p>image here</p>
     }
@@ -32,7 +32,6 @@ function App(props) {
         dispatch(inputId(Number(e.target.value)))
       }} />
       <div>
-        {data.objectId}
         {renderImg()}
       </div>
     </div>
